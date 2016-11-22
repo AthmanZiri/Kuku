@@ -1,0 +1,64 @@
+{% include 'Adds/codes/static.html' %}
+   <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+      <header class="mdl-layout__header">         
+         {% include 'Adds/codes/header.html' %} 
+        </header> 
+    <main class="mdl-layout__content" >    
+         <div class="mdl-tabs mdl-js-tabs" >
+            <div class="mdl-tabs__tab-bar">
+               <a href="#tab1-panel" class="mdl-tabs__tab is-active">All Products</a>
+               <a href="#tab2-panel" class="mdl-tabs__tab">Layers</a>
+               <a href="#tab3-panel" class="mdl-tabs__tab">Broilers</a>
+              <a href="#tab4-pannel" class="mdl-tabs__tab">Eggs</a>
+              <a href="#tab5-pannel" class="mdl-tabs__tab">Chicken Feed</a>
+            </div>
+           
+           
+            <div class="mdl-tabs__panel is-active" id="tab1-panel" >
+                <div class="mdl-grid" >
+                {% block adds %}
+                {% for add in object_list %}  
+                        
+                <div class="mdl-card card-1 mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+                  
+                  <div class="mdl-card__title">
+                    <h > {{add.title}} {{add.item}} @ {{add.price}}/= </h>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p><a href=""><i> @ {{add.address}}</i></a></p>
+                    <p> Posted by <b>{{add.full_name}}</b> on {{add.date}} </p>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href=" {{add.id}} ">View Ad</a>
+                    <div class="mdl-layout-spacer"></div>
+                    <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">favorite</i></button>
+                    <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons">share</i></button>
+                  </div>
+                </div>
+                {% endfor %}
+                {% endblock %}
+
+                </div>
+            </div>
+
+            <div class="mdl-tabs__panel" id="tab2-panel">
+               <p>Tab 2 Content</p>
+            </div>
+            <div class="mdl-tabs__panel" id="tab3-panel">
+               <p>Tab 3 Content</p>
+            </div>  
+              <div class="mdl-tabs__panel" id="tab4-pannel">
+               <p>Tab 4 Content</p>
+             </div>    
+                <div class="mdl-tabs__panel" id="tab5-pannel">
+               <p>Tab 5 Content</p>
+             </div>          
+              {% include 'Adds/codes/footer.html' %}
+
+        </div>
+       
+       </main>
+      </div>
+   </body>
+</html>
