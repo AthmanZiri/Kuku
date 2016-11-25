@@ -1,176 +1,299 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Kuku Mtaani</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        
+        .widget-wrapper {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 2rem;
+        }
+        
+        .extra-margins {
+            margin-top: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .divider-new {
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Simple portfolio website</span>
-                </span>
+
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-dark primary-color-dark">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="index.html">Kuku Mtaani</a>
+                    <!--Links-->
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Marketplace</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="map.html" target="_blank">Map</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <!--Search form-->
+                    <form class="form-inline">
+                        <input class="form-control" type="text" placeholder="Search">
+                    </form>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Post Ad</a>
+                    </li> -->
+                </div>
+                <!--/.Collapse content-->
+
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link  is-active" href="blog.html">Blog</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
-                        <img class="article-image" src=" images/example-blog01.jpg" border="0" alt="">
+
+        </nav>
+        <!--/.Navbar-->
+
+    </header>
+
+    <main>
+
+        <!--Main layout-->
+        <div class="container">
+            <div class="row">
+
+                <!--Sidebar-->
+                <div class="col-md-4">
+
+                    <div class="widget-wrapper">
+                        <h4>Categories:</h4>
+                        <br>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Sport</a>
+                            <a href="#" class="list-group-item">Music</a>
+                            <a href="#" class="list-group-item">Travels</a>
+                            <a href="#" class="list-group-item">Fashion</a>
+                            <a href="#" class="list-group-item">Parties</a>
+                        </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--8-col">
-                        <h2 class="mdl-card__title-text">Velit anim eiusmod labore sit amet</h2>
-                        <div class="mdl-card__supporting-text padding-top">
-                            <span>Posted 2 days ago</span>
-                            <div id="tt1" class=" icon material-icons portfolio-share-btn">share</div>
-                            <div class="mdl-tooltip" for="tt1">
-                                Share via social media
+
+                    <div class="widget-wrapper">
+                        <div class="card">
+                            <div class="card-block">
+                                <p><strong>Subscribe to our newsletter</strong></p>
+                                <p>Once a week we will send you a summary of the most useful news</p>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Your email</label>
+                                </div>
+                                <button class="btn btn-primary">Submit</button>
+
                             </div>
                         </div>
-                        <div class="mdl-card__supporting-text no-left-padding">
-                            <p>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Qui ullamco consectetur aute fugiat officia ullamco proident Lorem ad irure. Sint eu ut consectetur ut esse veniam laboris adipisicing aliquip minim anim labore commodo.</p>
-                            <span>Category: <a href="#">Latest</a></span>
+                    </div>
+
+                </div>
+                <!--/.Sidebar-->
+
+        <!--Main layout-->
+        <div class="container">
+            <div class="row">
+
+                <!--Main column-->
+                <div class="col-md-8">
+
+                    <!--Post-->
+                    <div class="post-wrapper">
+                        <!--Post data-->
+                        <h1 class="h1-responsive">Post title <small class="text-muted">Secondary text</small></h1>
+                        <h5>Written by <a href="">John Doe</a>, 30.04.2016</h5>
+
+                        <br>
+
+                        <!--Featured image -->
+                        <div class="view overlay hm-white-light z-depth-1-half">
+                            <img src="http://mdbootstrap.com/images/slides/slide%20(11).jpg" class="img-fluid " alt="">
+                            <div class="mask">
+                            </div>
                         </div>
+
+                        <br>
+
+                        <!--Post excerpt-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
+
+                        <!--"Read more" button-->
+                        <button class="btn btn-primary">Read more</button>
                     </div>
-                </div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Voluptate voluptate</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog02.jpg" border="0" alt=""></a>
-                    </div>
-                    <div class="mdl-card__supporting-text no-bottom-padding">
-                        <span>Posted 2 days ago</span>
-                        <div id="tt2" class=" icon material-icons portfolio-share-btn">share</div>
-                        <div class="mdl-tooltip" for="tt2">
-                            Share via social media
+                    <!--/.Post-->
+
+                    <hr>
+
+                    <!--Post-->
+                    <div class="post-wrapper">
+                        <!--Post data-->
+                        <h1 class="h1-responsive">Post title <small class="text-muted">Secondary text</small></h1>
+                        <h5>Written by <a href="">John Doe</a>, 30.04.2016</h5>
+
+                        <br>
+
+                        <!--Featured image -->
+                        <div class="view overlay hm-white-light z-depth-1-half">
+                            <img src="http://mdbootstrap.com/images/slides/slide%20(12).jpg" class="img-fluid " alt="">
+                            <div class="mask">
+                            </div>
                         </div>
+
+                        <br>
+
+                        <!--Post excerpt-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
+
+                        <!--"Read more" button-->
+                        <button class="btn btn-primary">Read more</button>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <p>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in.</p>
+                    <!--/.Post-->
+
+                    <hr>
+
+                    <!--Post-->
+                    <div class="post-wrapper">
+                        <!--Post data-->
+                        <h1 class="h1-responsive">Post title <small class="text-muted">Secondary text</small></h1>
+                        <h5>Written by <a href="">John Doe</a>, 30.04.2016</h5>
+
+                        <br>
+
+                        <!--Featured image -->
+                        <div class="view overlay hm-white-light z-depth-1-half">
+                            <img src="http://mdbootstrap.com/images/slides/slide%20(24).jpg" class="img-fluid" alt="">
+                            <div class="mask">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <!--Post excerpt-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, officia omnis. Vero nihil neque dignissimos hic voluptas quisquam amet porro, similique libero ullam veritatis tempora cumque voluptates harum. Repellendus, impedit.</p>
+
+                        <!--"Read more" button-->
+                        <button class="btn btn-primary">Read more</button>
                     </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-full-bg  ">
-                    <div class="mdl-card__title mdl-card--expand "></div>
-                    <div class="mdl-card__actions">
-                        <span class="demo-card-image__filename">Pamukkale.jpg</span>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp ">
-                    <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog04.jpg" border="0" alt=""></a>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <small>Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit.</small>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <p>Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Qui ullamco consectetur aute fugiat officia ullamco proident Lorem ad irure. Sint eu ut consectetur ut esse veniam.</p>
-                    </div>
-                </div>
-                <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--white">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h4 class="mdl-color-text--white">
-                          Conference event:<br>
-                          May 24, 2016<br>
-                          7-11pm
-                        </h4>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
-                          Add to Calendar
-                        </a>
-                        <div class="mdl-layout-spacer"></div>
-                        <i class="material-icons ">event</i>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title mdl-card--expand portfolio-blog-card-strip-bg mdl-color-text--white">
-                        <h2 class="mdl-card__title-text">adipiscing</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                          View Updates
-                        </a>
-                    </div>
-                </div>
-                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-card  mdl-card mdl-shadow--4dp portfolio-blog-card-compact">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-blog07.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title ">
-                        <h2 class="mdl-card__title-text">Loren</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">
-                          View Updates
-                        </a>
-                    </div>
+                    <!--/.Post-->
+
+                    <hr>
+
+                    <!--Pagination-->
+                    <nav class="text-xs-center">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--/.Pagination-->
+
+                    <hr>
+
                 </div>
             </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Simple portfolio website</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        </div>
+        <!--/.Main layout-->
+
+    </main>
+
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only primary-color-dark">     
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2015 Copyright: Kuku Mtaani
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
 </body>
 
 </html>
